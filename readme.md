@@ -1,8 +1,6 @@
 # Phaser 3 + Vite.js Template
 > Make Phaser 3 games with modern frontend tooling.
 
-![License](https://img.shields.io/badge/license-MIT-green)
-
 ## Prerequisites
 
 You'll need [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed.
@@ -23,10 +21,10 @@ Replace 'node' with 'latest' for `nvm-windows`.
 
 ## Getting Started
 
-You can clone this repository or use [degit](https://github.com/Rich-Harris/degit) to scaffold the project like this:
+You can clone this repository or use [git](https://github.com/datisekai/phaser-template) to scaffold the project like this:
 
 ```bash
-npx degit https://github.com/ourcade/phaser3-vite-template my-folder-name
+git clone https://github.com/datisekai/phaser-template my-folder-name
 cd my-folder-name
 
 npm install
@@ -53,9 +51,19 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── dist
     ├── node_modules
     ├── public
+    │   ├── images
     ├── src
-    │   ├── HelloWorldScene.js
-    │   ├── main.js
+    │   ├── scene
+    │   │    ├── Preload.js
+    │   │    ├── Bootstrap.js
+    │   │    ├── Play.js
+    │   │    ├── Gameover.js
+    │   ├── game-object
+    │   │    ├── Button.js
+    │   ├── fonts
+    │   │    ├── WebFontFile.js
+    │   ├── config
+    │   │    ├── index.js
 	├── index.html
     ├── package.json
 ```
@@ -64,7 +72,6 @@ JavaScript files are intended for the `src` folder. `main.js` is the entry point
 
 Other than that there is no opinion on how you should structure your project.
 
-There is an example `HelloWorldScene.js` file that can be placed inside a `scenes` folder to organize by type or elsewhere to organize by function. For example, you can keep all files specific to the HelloWorld scene in a `hello-world` folder.
 
 It is all up to you!
 
