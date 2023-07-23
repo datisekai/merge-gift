@@ -25,7 +25,7 @@ export default class GameOver extends Phaser.Scene {
       height / 2,
       200,
       60,
-      "Play Again",
+      "Restart",
       0x000000,
       0xffffff
     );
