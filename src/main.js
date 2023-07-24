@@ -18,6 +18,7 @@ const config = {
     default: "arcade",
     arcade: {
       gravity: { y: 200 },
+      debug:true
     },
   },
   scene: [Preload, Bootstrap, Play, GameOver],
