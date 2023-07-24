@@ -17,6 +17,8 @@ export default class Preload extends Phaser.Scene {
     this.load.image("level4", "images/level4.png");
     this.load.image("bg", "images/bg.png");
     this.load.addFile(new WebFontFile(this.load, fontFamily));
+
+    this.load.audio('backgroundMusic', 'audio/main-audio.mp3');
   }
 
   create() {

@@ -26,7 +26,15 @@ export default class Play extends Phaser.Scene {
 
     this.input.on("pointerdown", this.startDrag, this);
 
-    this.createTitle()
+    this.createTitle();
+
+    this.music = this.loadAudio()
+  }
+
+  loadAudio() {
+    const music = this.sound.add('backgroundMusic');
+    music.play()
+    return music
   }
 
   getRandomPosition() {
@@ -184,7 +192,7 @@ export default class Play extends Phaser.Scene {
 
   createTitle() {
     this.add
-      .text(width / 2, 100, 'Ghép quà', {
+      .text(width / 2, 100, "Ghép quà", {
         fontFamily: fontFamily,
         fontSize: "30px",
         color: "#ff0000",
